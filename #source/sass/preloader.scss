@@ -1,0 +1,61 @@
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #09090b;
+	z-index: 1001;
+	padding-left: calc(1vw + 40%);
+	padding-top: calc(1vw + 22%);
+}
+
+.loaded_hiding .preloader {
+	transition: 0.3s opacity;
+	opacity: 0;
+}
+
+.loaded .preloader {display: none;}
+
+body.fixed {overflow: hidden;}
+$margin: 10px;
+.preloader-1 {
+	h1 {
+		color: #fff;
+		margin-left: 100px;
+		margin-top: -$margin;
+		margin-bottom: $margin;
+	}
+	progress {
+		font-size: 2em;
+		background: #777;
+		&::-moz-progress-bar {
+			background: -webkit-linear-gradient(right, #cdeb8e 0%, #ad6dba 100%);
+			background: -o-linear-gradient(right, #cdeb8e 0%, #ad6dba 100%);
+			background: linear-gradient(to left, #cdeb8e 0%, #ad6dba 100%);
+		}
+		&::-webkit-progress-bar {
+			background: -webkit-linear-gradient(right, #cdeb8e 0%, #ad6dba 100%);
+			background: -o-linear-gradient(right, #cdeb8e 0%, #ad6dba 100%);
+			background: linear-gradient(to left, #cdeb8e 0%, #ad6dba 100%);
+		}
+		&::-o-progress-bar {
+			background: -webkit-linear-gradient(right, #cdeb8e 0%, #ad6dba 100%);
+			background: -o-linear-gradient(right, #cdeb8e 0%, #ad6dba 100%);
+			background: linear-gradient(to left, #cdeb8e 0%, #ad6dba 100%);
+		}
+		&::-ms-progress-bar {
+			background: -webkit-linear-gradient(right, #cdeb8e 0%, #ad6dba 100%);
+			background: -o-linear-gradient(right, #cdeb8e 0%, #ad6dba 100%);
+			background: linear-gradient(to left, #cdeb8e 0%, #ad6dba 100%);
+		}
+	}
+	.progress-value {
+		padding: 0px 5px;
+		line-height: 20px;
+		margin-left: 5px;
+		font-size: 1.8em;
+		color: #fff;
+		height: 18px;
+	}
+}

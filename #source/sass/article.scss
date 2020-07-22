@@ -1,0 +1,90 @@
+.wrapper {
+	.content {
+		.container {
+			.namecate {
+				margin-left: 35%;
+				width: 17%;
+				padding-left: 2%;
+				height: auto;
+				overflow: hidden;
+			}
+			.article {
+				img {
+					width: 100%;
+					max-height: 600px;
+					margin-bottom: 25px;
+					border-radius: 50px;
+				}
+				.keep {
+					background-color: #b0b0b0;
+					margin-bottom: 50px;
+				}
+				.comm {
+					background-color: #b0b0b0;
+					margin-top: 50px;
+					.com {
+						height: auto;
+						max-height: 700px;
+						padding-bottom: 20px;
+						margin-bottom: 25px;
+						overflow: hidden;
+						img {
+							width: calc(1vw + 20%);
+							float: left;
+							padding: 10px;
+							padding-bottom: 0;
+						}
+						h3 {
+							padding-left: 25px;
+						}
+						.name {
+							font-size: calc(1vw + 0.6em);
+						}
+						.time {
+							font-size: 0.9em;
+						}
+						.art {
+							font-size: calc(1vw + 0.1em);
+						}
+					}
+				}
+				form {
+					background-color: #b0b0b0;
+					padding-left: 10px;
+					textarea {
+						padding-left: 10px;
+						font-size: calc(1vw + 0.1em);
+						width: calc(1vw + 96%);
+						height: 275px;
+						overflow: hidden;
+						resize: none;
+						border-radius: 10px;
+						margin-bottom: 5px;
+						color: #000;
+						background-color: #fa2;
+						border: 0;
+					}
+					input {
+						width: calc(1vw + 96%);
+						border-radius: 10px;
+						color: #000;
+						background-color: #fa2;
+					}
+					#done {
+						margin-left: 40%;
+						font-size: calc(1vw + 0.2em);
+						width: 25%;
+						margin-bottom: 5px;
+						color: #000;
+						background-color: #fa2;
+						border: 0;
+						&:hover {
+							background-color: #000;
+							color: #fa2;
+						}
+					}
+				}
+			}
+		}
+	}
+}
